@@ -17,6 +17,8 @@
 # limitations under the License.
 #
 
+include_recipe "apt"
+
 apt_repository "erlangsolutions" do
   uri          "http://binaries.erlang-solutions.com/debian"
   distribution node['lsb']['codename']
